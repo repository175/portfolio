@@ -1,0 +1,141 @@
+@charset 'UTF-8';
+
+* {
+  background-color: #1C1B29;
+  font-family: "DotGothic16", sans-serif;
+}
+
+
+html {
+  box-sizing: border-box;
+  font-size: 20px;
+  letter-spacing: 0.1rem;
+}
+
+h1 {
+  color: white;
+  margin-left: 50px;
+  font-size: 40px;
+}
+
+main {
+  width: 860px;
+  margin: 0 auto;
+}
+
+/* すべての席の設定 */
+.all_seat {
+  width: 860px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #FF7518;
+  margin-bottom: 50px;
+}
+
+/* 教卓の設定 */
+.teacher {
+  display: grid;
+  justify-content: center;
+  /* 横（インライン）方向に中央揃え */
+  align-items: center;
+  /* 縦方向に中央揃え */
+  border: solid 2px;
+  width: 120px;
+  height: 30px;
+  padding: 30px;
+  margin: 50px;
+  background-color: white;
+}
+
+/* 座席にborderつける 1席ずつ囲む*/
+.seat_num {
+  display: grid;
+  justify-content: center;
+  /* 横（インライン）方向に中央揃え */
+  align-items: center;
+  /* 縦方向に中央揃え */
+  border: solid 2px;
+  height: 50px;
+  font-size: 20px;
+  background-color: white;
+}
+
+/* 左端と真ん中の列 */
+/* 席3つ横並びに */
+.seat_one,
+.seat_two {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 300px;
+  margin: 10px;
+}
+
+/* 右端の列 */
+/* 席2つ横並びに */
+.seat_three {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 200px;
+  margin: 10px;
+}
+
+/* 入力欄 */
+input[type="text"] {
+  padding: 6px;
+  width: 100px;
+  font-size: 1rem;
+  text-align: center;
+  margin-left: 15px;
+  background-color: white;
+}
+
+/* +ボタン、－ボタン */
+button[type="button"] {
+  padding: 5px;
+  width: 30px;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 5px;
+  margin-right: 15px;
+  background-color: white;
+}
+
+/* スタートボタン、印刷ボタン */
+input[type="button"] {
+  padding: 5px;
+  width: 100px;
+  font-size: 1rem;
+  text-align: center;
+  margin: 15px;
+  background-color: white;
+}
+
+#add,
+.remove {
+  width: 40px;
+  margin-left: 15px;
+}
+
+/* about.html */
+
+ul, h2, p{
+  color: white;
+}
+/* 印刷時のサイズ設定（A4） */
+@page {
+  size: 297mm 210mm;
+}
+
+/* 印刷時のデザイン設定 */
+@media print {
+  * {
+    background-color: white;
+    color: black;
+    font-family: sans-serif;
+  }
+
+  /* タイトルと入力欄、＋ボタン、－ボタン、スタートボタン、印刷ボタンを非表示 */
+  .print_none {
+    display: none;
+  }
+}
