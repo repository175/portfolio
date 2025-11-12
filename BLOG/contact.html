@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="これは HTMLCSSの課題作品です。">
+  <title>KUMITATE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="top">
+  <!-- ヘッダーはじまり-->
+  <header class="header">
+    <h1><a href="index.html" class="kumitate">KUMITATE</a></h1>
+    <nav class="icon">
+      <ul>
+        <li><a href="index.html">
+            <img src="images/home_icon.svg" alt="ホームアイコン" class="home_icon">
+            <span>HOME</span>
+          </a></li>
+
+        <li><a href="items.html">
+            <img src="images/items_icon.svg" alt="いるものアイコン" class="items_icon">
+            <span>ITEMS</span>
+          </a></li>
+
+        <li><a href="assemble.html">
+            <img src="images/kumitate_icon.svg" alt="くみたてアイコン" class="kumitate_icon">
+            <span>ASSEMBLE</span>
+          </a></li>
+
+        <li><a href="game.html">
+            <img src="images/game_icon.svg" alt="ゲームアイコン" class="game_icon">
+            <span>GAME</span>
+          </a></li>
+
+        <li><a href="contact.html">
+            <img src="images/contact_icon.svg" alt="コンタクトアイコン" class="contact_icon">
+            <span>CONTACT</span>
+          </a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- ヘッダーおわり -->
+
+  <!-- メインはじまり -->
+  <main class="hero">
+    <img src="images/contact_hero.jpg" alt="書斎のドット絵">
+    <form action="#" method="post">
+      <h2 class="down">▼ CONTACT</h2>
+      <dl>
+        <dt>
+          <label for="kind">内容</label>
+        </dt>
+        <dd>
+          <select name="kind" id="kind" class="kind">
+            <option value="PC">PC関連について</option>
+            <option value="GAME">ゲームについて</option>
+            <option value="OTHER">その他</option>
+          </select>
+        </dd>
+
+        <dt>
+          <label for="name">お名前</label>
+        </dt>
+        <dd>
+          <input type="text" name="name" id="name">
+        </dd>
+
+        <dt>
+          <label for="e-mail">メールアドレス</label>
+        </dt>
+        <dd>
+          <input type="text" name="e-mail" id="e-mail">
+        </dd>
+
+        <dt>
+          <label for="message">本文</label>
+        </dt>
+        <dd>
+          <textarea name="message" id="message"></textarea>
+        </dd>
+      </dl>
+      <p class="submit">
+        <input type="submit" value="送信">
+      </p>
+    </form>
+  </main>
+  <!-- メインおわり -->
+
+  <!-- フッターはじまり -->
+  <footer>
+    <div class="gotop">
+      <a href="#top"><img src="images/gotop.svg" alt="ページトップへ戻る"></a>
+    </div>
+    <p class="copyright">&copy; KUMITATE</p>
+  </footer>
+  <!-- フッターおわり -->
+
+</body>
+
+</html>
