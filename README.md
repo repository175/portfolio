@@ -6,9 +6,9 @@
 ドット絵が好きなので、素材は下記サイト様からお借りしました。  
 
 アイコン  
-        [リンクテキスト](https://dot-illust.net/)  
+        (https://dot-illust.net/)  
 大きい画像  
-        [リンクテキスト](https://game-materials.com/category/dot/)  
+        (https://game-materials.com/category/dot/)  
 
 
 ### HTML、CSS、JavaScriptのみを使用した作品　→　席替えゲーム  
